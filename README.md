@@ -13,14 +13,14 @@ $ gcloud init
 ## Deployment
 Deploy http trigger cloud function
 ```bash
-gcloud functions deploy FUNCTION_NAME \
+$ gcloud functions deploy FUNCTION_NAME \
 	--runtime RUNTIME --trigger-http \
 	--entry-point=FUNCTION_ENTRYPOINT_NAME
 ```
 
 Deploy pubsub trigger cloud function
 ```bash
-gcloud functions deploy FUNCTION_NAME \
+$ gcloud functions deploy FUNCTION_NAME \
 	--trigger-topic FUNCTION_TOPIC \
 	--runtime RUNTIME \
 	--entry-point=FUNCTION_ENTRYPOINT_NAME
@@ -30,10 +30,10 @@ gcloud functions deploy FUNCTION_NAME \
 
 Test trigger pubsub
 ```bash
-gcloud functions call FUNCTION_NAME --data '{"topic":"FUNCTION_TOPIC","message":"Hello World!"}'
+$ gcloud functions call FUNCTION_NAME --data '{"topic":"FUNCTION_TOPIC","message":"Hello World!"}'
 ```
 
 Test using curl
 ```bash
-curl https://${GCF_URL} -X POST  -d "{\"topic\": \"FUNCTION_TOPIC\", \"message\":\"Testing one\"}" -H "Content-Type: application/json"
+$curl https://${GCF_URL} -X POST  -d "{\"topic\": \"FUNCTION_TOPIC\", \"message\":\"Testing one\"}" -H "Content-Type: application/json"
 ```
