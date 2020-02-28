@@ -37,3 +37,8 @@ Test using curl
 ```bash
 $curl https://${GCF_URL} -X POST  -d "{\"topic\": \"FUNCTION_TOPIC\", \"message\":\"Testing one\"}" -H "Content-Type: application/json"
 ```
+
+Get function log
+```bash
+$ gcloud functions logs read FUNCTION_NAME
+```
