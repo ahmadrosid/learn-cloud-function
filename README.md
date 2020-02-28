@@ -2,6 +2,9 @@
 
 Google Cloud Functions is a lightweight compute solution for developers to create single-purpose, stand-alone functions that respond to Cloud events without the need to manage a server or runtime environment.
 
+## System Requirement
+- Python (Supported versions are 3.5 or higher, and 2.7.9 or higher)
+
 ## Installation
 Google cloud cli :
 ```bash
