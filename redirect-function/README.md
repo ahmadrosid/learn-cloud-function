@@ -33,3 +33,8 @@ Get the output url and hit the endpoint.
 ```bash
 curl -X GET 'https://us-central1-kwdev-new.cloudfunctions.net/redirect-function'
 ```
+
+Result
+```bash
+Found. Redirecting to https://avatars1.githubusercontent.com/u/29406408?v=4
+```
